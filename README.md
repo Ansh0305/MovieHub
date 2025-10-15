@@ -86,10 +86,6 @@ MovieHub/
 
 ├── src/
 
-│ ├── assets/
-
-│ │ └── react.svg
-
 │ ├── components/
 
 │ │ ├── Loader.jsx
