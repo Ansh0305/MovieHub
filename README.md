@@ -1,16 +1,135 @@
-# React + Vite
+# MovieHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application to search for movies and explore trending titles using The Movie Database (TMDB) API. Effortlessly discover movies you’ll enjoy with a simple and responsive interface.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
 
-## React Compiler
+## Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+MovieHub was built to provide a hassle-free movie discovery experience. The app uses the TMDB API to fetch popular and searched movies, showing movie posters, rankings, and handling loading and error states seamlessly. It also incorporates debounced search input and backend analytics integration (Appwrite).
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Add your demo deployment link here (Netlify, Vercel, etc.)*
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/Ansh0305/moviehub.git
+
+Use following commands: 
+
+cd moviehub
+
+npm install
+
+echo "VITE_TMDB_API_KEY=your_tmdb_api_key_here" > .env
+
+npm run dev
+
+
+## Usage
+
+- Search for any movie by title using the search bar.
+- Browse today's trending movies in the "Most Watched Movies" section.
+- All results update dynamically as you type.
+
+## Features
+
+- **Debounced search input** for efficient API usage
+- **Trending movies** section, displayed and updated daily
+- **Responsive UI** and error handling
+- **Appwrite integration** for backend analytics
+
+## Technologies
+
+- React (Hooks: `useState`, `useEffect`, useDebounce)
+- TMDB API
+- Appwrite
+- CSS
+- [react-use](https://github.com/streamich/react-use)
+
+## Project Structure
+
+Your project uses a clean, modular structure:
+
+MovieHub/
+│
+
+├── public/
+
+│ ├── background.png
+
+│ ├── ghost.svg
+
+│ ├── hero.png
+
+│ ├── logo.png
+
+│ ├── no-movie.png
+
+│ ├── search.svg
+
+│ └── star.svg
+
+│
+
+├── src/
+
+│ ├── assets/
+
+│ │ └── react.svg
+
+│ ├── components/
+
+│ │ ├── Loader.jsx
+
+│ │ ├── MovieCard.jsx
+
+│ │ └── Search.jsx
+
+│ ├── App.css
+
+│ ├── App.jsx
+
+│ ├── appwrite.js
+
+│ ├── index.css
+
+│ └── main.jsx
+
+│
+├── .env
+
+├── .gitignore
+
+├── eslint.config.js
+
+├── index.html
+
+├── package-lock.json
+
+├── package.json
+
+├── README.md
+
+└── vite.config.js
+
+
+## Contributing
+
+Contributions are welcome! Please open issues or pull requests for bug fixes, new features, or suggestions.
+
+
+
+
