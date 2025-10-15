@@ -25,7 +25,7 @@ MovieHub was built to provide a hassle-free movie discovery experience. The app 
 
 Clone the repository:
 
-git clone https://github.com/Ansh0305/moviehub.git
+git clone https: https://github.com/Ansh0305/MovieHub.git
 
 Use following commands: 
 
