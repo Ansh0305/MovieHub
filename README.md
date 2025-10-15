@@ -19,7 +19,7 @@ MovieHub was built to provide a hassle-free movie discovery experience. The app 
 
 ## Demo
 
-*Add your demo deployment link here (Netlify, Vercel, etc.)*
+https://moviehuby.netlify.app/
 
 ## Installation
 
